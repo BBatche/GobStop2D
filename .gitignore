@@ -1,0 +1,62 @@
+# Unity Generated Files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Asset Meta Files
+/[Aa]ssets/**/*.meta
+
+# Visual Studio / Rider
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.pidb
+*.suo
+*.userprefs
+*.user
+*.booproj
+*.svd
+
+# Unity Cache Files
+*.stackdump
+*.log
+
+# Unity Backup Files
+*.bak
+*.old
+*.orig
+
+# Crash Logs
+*.crash
+*.dmp
+
+# Shader Cache
+[Ss]hader[Cc]ache/
+
+# Generated Lightmaps
+[Ll]ight[Mm]ap[Ds]ata/
+
+# Audio
+[Dd]sp[Cc]ache/
+
+# Exclude auto-generated files for version control
+/[Bb]uilds/
+/Assets/StreamingAssets/*
+!*.gitkeep
+
+# Package Manager
+[Pp]ackages/manifest.json
+[Pp]ackages/packages-lock.json
+
+# Ignore hidden files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.apk
+*.unitypackage
