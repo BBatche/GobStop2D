@@ -21,6 +21,7 @@
 *.user
 *.booproj
 *.svd
+*.dwlt
 
 # Unity Cache Files
 *.stackdump
