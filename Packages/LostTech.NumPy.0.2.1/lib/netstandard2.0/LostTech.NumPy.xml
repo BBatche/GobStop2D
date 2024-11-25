@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LostTech.NumPy</name>
+    </assembly>
+    <members>
+        <member name="T:numpy._ArrayLike">
+            <summary>
+            Base class for NumPy's array-like objects (including scalars).
+            </summary>
+        </member>
+        <member name="M:numpy._ArrayLike.op_Equality(numpy.NullComparison,numpy._ArrayLike)">
+            <summary>Checks if value is <c>null</c></summary>
+        </member>
+        <member name="M:numpy._ArrayLike.op_Inequality(numpy.NullComparison,numpy._ArrayLike)">
+            <summary>Checks if value is <c>null</c></summary>
+        </member>
+        <member name="M:numpy._ArrayLike.op_Equality(numpy._ArrayLike,numpy.NullComparison)">
+            <summary>Checks if value is <c>null</c></summary>
+        </member>
+        <member name="M:numpy._ArrayLike.op_Inequality(numpy._ArrayLike,numpy.NullComparison)">
+            <summary>Checks if value is <c>null</c></summary>
+        </member>
+        <member name="M:numpy.ArrayOrElement`1.AsScalar">
+            <summary>
+            Returns a scalar element, which this array-like object represents.
+            </summary>
+        </member>
+        <member name="M:numpy.ArrayOrElement`1.AsArray">
+            <summary>
+            Returns an array, which this array-like object represents.
+            </summary>
+        </member>
+        <member name="M:numpy.dtype.GetClass``1">
+            <summary>
+            Gets <see cref="T:LostTech.Gradient.PythonClassContainer"/> representing NumPy analogue of the specified .NET type
+            </summary>
+        </member>
+        <member name="T:numpy.ndarray`1">
+            <summary>
+            Multidimensional array of fixed-size items.
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(System.Index)">
+            <summary>
+            Gets or sets array element(s) at the specified index
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(System.Index,System.Index)">
+            <summary>
+            Gets or sets array element(s) at the specified index
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(System.Index,System.Index,System.Index)">
+            <summary>
+            Gets or sets array element(s) at the specified index
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(System.Index,System.Index,System.Index,System.Index)">
+            <summary>
+            Gets or sets array element(s) at the specified index
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(System.Index,System.Index,System.Index,System.Index,System.Index)">
+            <summary>
+            Gets or sets array element(s) at the specified index
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(numpy.ndarray{System.Int32})">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(LostTech.Gradient.RangeOrIndex)">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex)">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex)">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex)">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray`1.Item(LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex)">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="T:numpy.MarshalingExtensions">
+            <summary>
+            Marshaling between .NET collections and NumPy arrays.
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.ToNumPyArray``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Copies elements from enumerable into a new NumPy array
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.ToNumPyArray``1(System.ReadOnlySpan{``0})">
+            <summary>
+            Copies memory span into a new NumPy array.
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.ToNumPyArray``1(System.ReadOnlySpan{``0},System.Int32[])">
+            <summary>
+            Copies memory span into a new NumPy array.
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.CopyTo``1(System.ReadOnlySpan{``0},numpy.ndarray{``0})">
+            <summary>
+            Copies span elements into an existing NumPy array.
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.CopyTo``1(``0[],numpy.ndarray{``0})">
+            <summary>
+            Copies array into an existing NumPy array.
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.ToNumPyArray``1(``0[])">
+            <summary>
+            Copies array into a new NumPy array with the same dimensions.
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.ToNumPyArray``1(``0[0:,0:])">
+            <summary>
+            Copies array into a new NumPy array with the same dimensions.
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.ToNumPyArray``1(``0[0:,0:,0:])">
+            <summary>
+            Copies array into a new NumPy array with the same dimensions.
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.ToNumPyArray``1(``0[0:,0:,0:,0:])">
+            <summary>
+            Copies array into a new NumPy array with the same dimensions.
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.ToNumPyArray``1(``0[0:,0:,0:,0:,0:])">
+            <summary>
+            Copies array into a new NumPy array with the same dimensions.
+            </summary>
+        </member>
+        <member name="M:numpy.MarshalingExtensions.ToNumPyArray``1(``0[0:,0:,0:,0:,0:,0:])">
+            <summary>
+            Copies array into a new NumPy array with the same dimensions.
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray.Length">
+            <summary>
+            Number of elements in the first dimension
+            </summary>
+        </member>
+        <member name="M:numpy.ndarray.FromList``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Creates a new NumPy array by copying elements from the specified list
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray.Item(numpy.ndarray{System.Int32})">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray.Item(LostTech.Gradient.RangeOrIndex)">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray.Item(LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex)">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray.Item(LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex)">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray.Item(LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex)">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="P:numpy.ndarray.Item(LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex,LostTech.Gradient.RangeOrIndex)">
+            <summary>
+            Gets or sets a subrange of elements in this array
+            </summary>
+        </member>
+        <member name="T:numpy.np">
+            <summary>
+            NumPy static methods
+            </summary>
+        </member>
+        <member name="M:numpy.np.copyto``1(numpy.ndarray{``0},numpy.ndarray{``0})">
+            <summary>
+            Copies values from one array to another, broadcasting as necessary.
+            </summary>
+        </member>
+        <member name="M:numpy.np.copyto_dyn(numpy.ndarray,numpy._ArrayLike)">
+            <summary>
+            Copies values from one array to another, broadcasting as necessary.
+            </summary>
+        </member>
+        <member name="M:numpy.np.zeros``1(System.UInt64)">
+            <summary>
+            Creates a zero-filled array
+            </summary>
+        </member>
+        <member name="M:numpy.np.zeros``1(System.Collections.Generic.IEnumerable{System.UInt64})">
+            <summary>
+            Creates a zero-filled array
+            </summary>
+        </member>
+        <member name="M:numpy.np.stack(System.Collections.Generic.IEnumerable{System.Collections.IEnumerable},System.Int32)">
+            <summary>Join a sequence of arrays along a new axis.</summary>
+        </member>
+        <member name="T:numpy.NullComparison">
+            <summary>
+            This is a non-instantiatable type, that handles <see cref="T:numpy._ArrayLike"/>
+            and <see cref="T:numpy.ndarray`1"/> comparison to <c>null</c>
+            </summary>
+        </member>
+        <member name="M:numpy.NullComparison.Equals(System.Object)">
+            <summary>This method should never be called</summary>
+        </member>
+        <member name="M:numpy.NullComparison.GetHashCode">
+            <summary>This method should never be called</summary>
+        </member>
+        <member name="M:numpy.NumPyTypingExtensions.AsScalar``1(numpy._ArrayLike)">
+            <summary>
+            Returns a scalar, which this array-like object represents
+            </summary>
+        </member>
+        <member name="M:numpy.NumPyTypingExtensions.AsArray``1(numpy._ArrayLike)">
+            <summary>
+            Reinterprets this array-like object as a typed array.
+            </summary>
+        </member>
+        <member name="T:numpy.random">
+            <summary>
+            NumPy’s random number routines
+            </summary>
+        </member>
+        <member name="M:numpy.random.seed(System.UInt32)">
+            <summary>
+            Set the random generator seed
+            </summary>
+        </member>
+        <member name="T:LostTech.NumPy.NumPySetup">
+            <summary>
+            Controls initialization of NumPy library
+            </summary>
+        </member>
+        <member name="M:LostTech.NumPy.NumPySetup.EnsureInitialized">
+            <summary>
+            Checks if NumPy integration has been initialized, and initializes it if necessary.
+            </summary>
+        </member>
+    </members>
+</doc>

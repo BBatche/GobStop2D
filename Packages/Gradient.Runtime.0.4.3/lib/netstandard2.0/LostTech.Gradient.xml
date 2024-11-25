@@ -1,0 +1,867 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LostTech.Gradient</name>
+    </assembly>
+    <members>
+        <member name="T:LostTech.Gradient.BuiltIns.PythonCollection`2">
+            <summary>
+            Can be used to wrap Python collections
+            </summary>
+            <typeparam name="T">Type of the items in the collection</typeparam>
+            <typeparam name="TSeq">Underlying collection type</typeparam>
+        </member>
+        <member name="P:LostTech.Gradient.BuiltIns.PythonCollection`2.Count">
+            <summary>
+            Gets the number of items in the list
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonCollection`2.CopyTo(`0[],System.Int32)">
+            <summary>
+            Copies contents of the list to a specific location inside an array
+            </summary>
+            <param name="array">Array to copy to</param>
+            <param name="arrayIndex">Destination start index</param>
+        </member>
+        <member name="T:LostTech.Gradient.BuiltIns.PythonDict`2">
+            <summary>
+            Wraps an instance of Python's dict type
+            </summary>
+            <typeparam name="TKey">Type of keys in the dict</typeparam>
+            <typeparam name="TValue">Type of values in the dict</typeparam>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonDict`2.#ctor">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.BuiltIns.PythonDict`2"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonDict`2.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.BuiltIns.PythonDict`2"/> with given <paramref name="items"/>
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.BuiltIns.PythonDict`2.Item(`0)">
+            <summary>
+            Gets or sets the value for the specified key.
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.BuiltIns.PythonDict`2.Keys">
+            <summary>
+            Returns collection of the keys in this dictionary
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.BuiltIns.PythonDict`2.Values">
+            <summary>
+            Returns collection of the values in this dictionary
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.BuiltIns.PythonDict`2.Count">
+            <summary>
+            Returns the number of entries
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonDict`2.Add(`0,`1)">
+            <summary>
+            Adds a new pair of key + value to the dictionary. Throws if the key is already in.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonDict`2.Clear">
+            <summary>
+            Removes all entries from the dictionary
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonDict`2.ContainsKey(`0)">
+            <summary>
+            Checks if specified key is present in the dictionary
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonDict`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+            <summary>
+            Copies dictionary entries into the specified array
+            </summary>
+            <param name="array">Array to copy entries to</param>
+            <param name="arrayIndex">Copy entries starting at that index</param>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonDict`2.GetEnumerator">
+            <summary>
+            Returns enumerator for entries in this dictionary
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonDict`2.Remove(`0)">
+            <summary>
+            Removes an entry with specified key, if present, returning <c>true</c>.
+            Returns <c>false</c> if the key is not in the dictionary.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonDict`2.TryGetValue(`0,`1@)">
+            <summary>
+            Tries to get a value for a specified key.
+            Returns <c>false</c>, if the key is not in the dictionary.
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.BuiltIns.PythonGenerator`1">
+            <summary>
+            Represents Python generator object
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.BuiltIns.PythonGenerator`1.Current">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonGenerator`1.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonGenerator`1.MoveNext">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonGenerator`1.Reset">
+            <inheritdoc />
+        </member>
+        <member name="T:LostTech.Gradient.BuiltIns.PythonList`1">
+            <summary>
+            Wraps an instance of Python's list type
+            </summary>
+            <typeparam name="T">Type of the items in the list</typeparam>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonList`1.#ctor">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.BuiltIns.PythonList`1"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonList`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.BuiltIns.PythonList`1"/> with the given <paramref name="items"/>
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.BuiltIns.PythonList`1.Item(System.Int32)">
+            <summary>
+            Gets or sets the item at the specified index. Can count from the end using negative numbers.
+            </summary>
+            <param name="index">Index of the item to access</param>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonList`1.Add(`0)">
+            <summary>
+            Appends new item to the end of the list
+            </summary>
+            <param name="item">Item to append</param>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonList`1.Clear">
+            <summary>
+            Removes all the items from the list
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonList`1.Contains(`0)">
+            <summary>
+            Checks if the list contains specific item. Python's comparison is used.
+            </summary>
+            <param name="item">Item to check for</param>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonList`1.IndexOf(`0)">
+            <summary>
+            Gets the index of specified item in the list, or -1 if item is not in the list. Uses Python's comparison.
+            </summary>
+            <param name="item">Item to search for</param>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonList`1.Insert(System.Int32,`0)">
+            <summary>
+            Inserts item into the specified position in the list
+            </summary>
+            <param name="index">The index to insert at</param>
+            <param name="item">The item to insert</param>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonList`1.Remove(`0)">
+            <summary>
+            Removes the first occurence of the specified item from the list.
+            Returns <c>true</c> if the item was removed.
+            </summary>
+            <param name="item">Item to remove</param>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonList`1.RemoveAt(System.Int32)">
+            <summary>
+            Removes list item at the specified index.
+            </summary>
+            <param name="index">Index of the item to remove</param>
+        </member>
+        <member name="T:LostTech.Gradient.BuiltIns.PythonSequence`2">
+            <summary>
+            Can be used to wrap Python sequences
+            </summary>
+            <typeparam name="T">Type of the items in the sequence</typeparam>
+            <typeparam name="TSeq">Underlying sequence type</typeparam>
+        </member>
+        <member name="F:LostTech.Gradient.BuiltIns.PythonSequence`2.PySeq">
+            <summary>
+            Instance of the wrapped sequence
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonSequence`2.GetEnumerator">
+            <summary>
+            Returns enumerator for this list
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.BuiltIns.PythonSet`1">
+            <summary>
+            Wraps an instance of Python's set type
+            </summary>
+            <typeparam name="T">Type of the items in the set</typeparam>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonSet`1.#ctor">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.BuiltIns.PythonSet`1"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.BuiltIns.PythonSet`1"/> with the given <paramref name="items"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonSet`1.Add(`0)">
+            <summary>
+            Adds new item to the set.
+            </summary>
+            <param name="item">Item to append.</param>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonSet`1.Clear">
+            <summary>
+            Removes all the items from the set
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonSet`1.Contains(`0)">
+            <summary>
+            Checks if the set contains specific item. Python's comparison is used.
+            </summary>
+            <param name="item">Item to check for</param>
+        </member>
+        <member name="M:LostTech.Gradient.BuiltIns.PythonSet`1.Remove(`0)">
+            <summary>
+            Removes item from the set.
+            Returns <c>true</c> if the item was removed.
+            </summary>
+            <param name="item">Item to remove</param>
+        </member>
+        <member name="T:LostTech.Gradient.Codecs.Array1ToPyListEncoder">
+            <summary>Converts 1D (and only 1D) .NET arrays into Python lists
+            (for compatibility with poorly written Python libraries)</summary>
+        </member>
+        <member name="P:LostTech.Gradient.Codecs.Array1ToPyListEncoder.IsEnabled">
+            <summary>
+            Controls if 1D .NET arrays are always converted to Python lists.
+            Must be set before Gradient is initialized.
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.Codecs.LinqToPyListEncoder">
+            <summary>Converts LINQ sequences into Python lists (for compatibility with poorly written Python libraries).</summary>
+        </member>
+        <member name="P:LostTech.Gradient.Codecs.LinqToPyListEncoder.IsEnabled">
+            <summary>
+            Controls if enumerables produced by LINQ are always converted to Python lists.
+            Must be set before Gradient is initialized.
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.CollectionTools">
+            <summary>
+            Simplifies interop between Gradient and .NET collections
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.CollectionTools.ToPyList``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Creates Python-compatible <see cref="T:System.Collections.Generic.IList`1"/> from <see cref="T:System.Collections.Generic.IEnumerable`1"/>.
+            Use this when a method in Gradient-based binding refuses to accept other
+            sequence or collection types
+            (usually by throwing <see cref="T:LostTech.Gradient.Exceptions.TypeError"/> or <see cref="T:LostTech.Gradient.Exceptions.ValueError"/>).
+            </summary>
+            <remarks>Creates a copy of the original sequence</remarks>
+        </member>
+        <member name="M:LostTech.Gradient.CollectionTools.ToPyDict``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})">
+            <summary>
+            Creates Python-compatible <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            Use this when a method in Gradient-based binding refuses to accept standard or custom
+            .NET dictionary types
+            (usually by throwing <see cref="T:LostTech.Gradient.Exceptions.TypeError"/> or <see cref="T:LostTech.Gradient.Exceptions.ValueError"/>).
+            </summary>
+            <remarks>Creates a copy of the original sequence</remarks>
+        </member>
+        <member name="T:LostTech.Gradient.DynamicallyTypedPythonObject">
+            <summary>
+            Represents a Python object, whose type has no .NET wrapper
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.DynamicallyTypedPythonObject.TryConvert(System.Dynamic.ConvertBinder,System.Object@)">
+            <inheritdoc />
+        </member>
+        <member name="T:LostTech.Gradient.Exceptions.AttributeError">
+            <summary>
+            Raised when an attribute reference (see Attribute references) or assignment fails.
+            (When an object does not support attribute references or attribute assignments at all,
+            <see cref="T:LostTech.Gradient.Exceptions.TypeError"/> is raised.)
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.Exceptions.KeyboardInterrupt">
+            <summary>
+            Raised when the user hits the interrupt key (normally Control-C or Delete).
+            During execution, a check for interrupts is made regularly when Python code is running.
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.Exceptions.KeyError">
+            <summary>
+            Raised when a mapping (dictionary) key is not found in the set of existing keys.
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.Exceptions.RuntimeError">
+            <summary>
+            Raised when an error is detected that does not fall in any of the other categories.
+            The associated value is a string indicating what precisely went wrong.
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.Exceptions.StopIteration">
+            <summary>
+            Raised when Python iterator runs out of items
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.Exceptions.StopIteration.#ctor">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.Exceptions.StopIteration"/>
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.Exceptions.SyntaxError">
+            <summary>
+            <para>
+            Raised when Python parser encounters a syntax error. This may occur in an import statement,
+            in a call to the built-in functions exec() or eval(), or when reading the initial script
+            or standard input (also interactively).
+            </para>
+            <para>Instances of this class have attributes filename, lineno, offset and text for
+            easier access to the details.str() of the exception instance returns only the message.</para>
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.Exceptions.TypeError">
+            <summary>
+            <para>Python equivalent of <see cref="T:System.InvalidCastException"/></para>
+            <para>
+            Raised when an operation or function is applied to an object of inappropriate type.
+            The associated value is a string giving details about the type mismatch.
+            </para>
+            <para>
+            This exception may be raised by user code to indicate that an attempted operation
+            on an object is not supported, and is not meant to be. If an object is meant to support
+            a given operation but has not yet provided an implementation, NotImplementedError is
+            the proper exception to raise.
+            </para>
+            <para>
+            Passing arguments of the wrong type (e.g. passing a list when an int is expected)
+            should result in a TypeError, but passing arguments with the wrong value
+            (e.g. a number outside expected boundaries) should result in a <see cref="T:LostTech.Gradient.Exceptions.ValueError"/>.
+            </para>
+            
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.Exceptions.ValueError">
+            <summary>
+            <para>Python equivalent of <see cref="T:System.ArgumentException"/></para>
+            <para>Raised when an operation or function receives an argument that has the right type but
+            an inappropriate value, and the situation is not described
+            by a more precise exception such as IndexError.
+            </para>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.Exceptions.ValueError.#ctor(System.String)">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.Exceptions.ValueError"/> with a specified error message.
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.GradientEngine">
+            <summary>
+            Contains members, which control how Gradient is configured and initialized
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.GradientEngine.PythonEnvironment">
+            <summary>
+            Python environment used by Gradient
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.GradientEngine.IsInitialized">
+            <summary>
+            Gets Gradient initialization status
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.GradientEngine.UseEnvironment(LostTech.WhichPython.PythonEnvironment)">
+            <summary>
+            Set Python environment, whose TensorFlow is going to be used.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.GradientEngine.UseCondaEnvironment(System.String)">
+            <summary>
+            Set Conda environment, whose TensorFlow is going to be used.
+            </summary>
+            <param name="condaEnvironmentName">Name of the Conda environment to use</param>
+        </member>
+        <member name="M:LostTech.Gradient.GradientEngine.UseEnvironmentFromVariable(System.String)">
+            <summary>
+            Configures Gradient to use Python environment, described in the specified environment variable.
+            (default: GRADIENT_PYTHON_ENVIRONMENT)
+            </summary>
+            <param name="environmentVariableName">Name of the environment variable to read configuration from</param>
+        </member>
+        <member name="M:LostTech.Gradient.GradientEngine.EnsureInitialized">
+            <summary>
+            Call this function to ensure Gradient was initialized
+            (useful when dealing with interop).
+            <para>Returns <c>true</c> if initialization had to be run.
+            Returns <c>false</c> if Gradient was initialized before this function was called.</para>
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.GradientEngine.AutomaticallySelectedEnvironment">
+            <summary>
+            Indicates if the Python environment has been selected automatically
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.GradientInitializationException">
+            <summary>
+            Thrown, when Gradient fails to initialize
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.GradientInitializationException.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.GradientInitializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.GradientInitializationException.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.GradientInitializationException.#ctor(System.String,System.Exception)">
+            <inheritdoc />
+        </member>
+        <member name="T:LostTech.Gradient.GradientLog">
+            <summary>
+            Controls where to put Gradient runtime logs
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.GradientLog.WarningWriter">
+            <summary>
+            <see cref="T:System.IO.TextWriter"/>, which Gradient runtime uses to write warnings to
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.GradientLog.OutputWriter">
+            <summary>
+            <see cref="T:System.IO.TextWriter"/>, which Gradient runtime uses to write normal messages to
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.ICanBeEnabled">
+            <summary>Represents an object, that can be turned on/off</summary>
+        </member>
+        <member name="P:LostTech.Gradient.ICanBeEnabled.IsEnabled">
+            <summary>Controls if the object is enabled.</summary>
+        </member>
+        <member name="T:LostTech.Gradient.IContextManager`1">
+            <summary>
+            Represents Python context manager (a scope)
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.IContextManager`1.__enter__">
+            <summary>
+            Initializes context
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.IContextManager`1.__exit__(System.Object,System.Object,System.Object)">
+            <summary>
+            Disposes any resources, allocated for the context.
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.ContextManagerExtensions">
+            <summary>
+            Extensions, that enable <code>using</code> statement-like behavior
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.ContextManagerExtensions.Use``1(LostTech.Gradient.IContextManager{``0},System.Action{``0})">
+            <summary>
+            Perform an action in this context.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.ContextManagerExtensions.UseSelf``2(``0,System.Action{``0})">
+            <summary>
+            Perform an action in this context.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.ContextManagerExtensions.Use``2(``0,System.Action{``0,``1})">
+            <summary>
+            Perform an action in this context.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.ContextManagerExtensions.UseIn``3(``0,System.Func{``0,``1,``2})">
+            <summary>
+            Compute a function in this context.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.ContextManagerExtensions.UseIn``2(LostTech.Gradient.IContextManager{``0},System.Func{``0,``1})">
+            <summary>
+            Compute a function in this context.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.ContextManagerExtensions.StartUsing``1(LostTech.Gradient.IContextManager{``0})">
+            <summary>
+            Enters the scope of the context manager. Returns an <see cref="T:System.IDisposable"/>,
+            whose <see cref="M:System.IDisposable.Dispose"/> method will exit the scope.
+            </summary>
+            <example><code>using(new variable_scope("myvar").StartUsing()) DoStuff()</code></example>
+        </member>
+        <member name="T:LostTech.Gradient.ImplicitContainer`1">
+            <summary>
+            <para>This class can hold any value.
+            In addition to the held <see cref="P:LostTech.Gradient.ImplicitContainer`1.Value"/> being <c>null</c>,
+            a variable of this type on itself can be <c>null</c>.</para>
+            It is generally used to pass default parameters to PythonFunctions,
+            whose values are not .NET compile-time constants.
+            </summary>
+            <typeparam name="T">Type of <see cref="P:LostTech.Gradient.ImplicitContainer`1.Value"/> to hold</typeparam>
+        </member>
+        <member name="M:LostTech.Gradient.ImplicitContainer`1.#ctor(`0)">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.ImplicitContainer`1"/> with the specified <paramref name="value"/>
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.ImplicitContainer`1.Value">
+            <summary>
+            The value, held by this instance.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.ImplicitContainer`1.op_Implicit(`0)~LostTech.Gradient.ImplicitContainer{`0}">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.ImplicitContainer`1"/> with the specified <paramref name="value"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.ImplicitContainer`1.ToString">
+            <inheritdoc />
+        </member>
+        <member name="P:LostTech.Gradient.Interop.ExtraDecoders">
+            <summary>
+            These decoders are called last before fallback
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.IPythonObjectContainer">
+            <summary>
+            An interface for Python object wrappers
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.IPythonObjectContainer.PythonObject">
+            <summary>
+            Object representation in Python
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.PythonObjectContainerExtensions">
+            <summary>Extensions for <see cref="T:LostTech.Gradient.IPythonObjectContainer"/> objects</summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainerExtensions.DynamicInvoke``1(LostTech.Gradient.IPythonObjectContainer,System.String,System.Object[])">
+            <summary>
+            Dynamically invokes specified method, returning a value of type <typeparamref name="T"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainerExtensions.DynamicInvokeKwargs``1(LostTech.Gradient.IPythonObjectContainer,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Object[])">
+            <summary>
+            Dynamically invokes specified method, returning a value of type <typeparamref name="T"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainerExtensions.DynamicGet``1(LostTech.Gradient.IPythonObjectContainer,System.String)">
+            <summary>Dynamically retrieves value of a named property</summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainerExtensions.DynamicSet``1(LostTech.Gradient.IPythonObjectContainer,System.String,``0)">
+            <summary>Dynamically sets value of a named property</summary>
+        </member>
+        <member name="T:LostTech.Gradient.IValueContainer`1">
+            <summary>
+            Interface for arbitrary value containers
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.IValueContainer`1.Get">
+            <summary>
+            Gets value from this container
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.KeywordArgsAttribute">
+            <summary>
+            Indicates a parameter, that accepts a dictionary of extra named arguments
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.PublicTools">
+            <summary>
+            Useful extension methods
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PublicTools.AsKwArgs``1(``0)">
+            <summary>
+            Converts anonymous object to a dictionary, suitable for Python keyword arguments.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PublicTools.Stream``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Returns a special wrapper for <see cref="T:System.Collections.Generic.IEnumerable`1"/>, that will always be
+            iterated over when passed to Python, rather than being copied to a list first.
+            </summary>
+            <seealso cref="T:LostTech.Gradient.Codecs.LinqToPyListEncoder"/>
+        </member>
+        <member name="T:LostTech.Gradient.PythonClassContainer">
+            <summary>
+            Container for Python classes and Python representations of .NET classes
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonClassContainer.CreateInstance(System.Object[])">
+            <summary>
+            Creates instances of the class, represented by this object.
+            </summary>
+            <param name="parameters">Constructor arguments</param>
+        </member>
+        <member name="T:LostTech.Gradient.PythonClassContainer`1">
+            <inheritdoc />
+        </member>
+        <member name="P:LostTech.Gradient.PythonClassContainer`1.Instance">
+            <summary>
+            Gets the Python representation for .NET type <typeparamref name="T"/>
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.PythonExceptionContainer">
+            <summary>
+            Base class for wrapped Python exceptions
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.PythonExceptionContainer.PythonObject">
+            <summary>
+            This object always points to the underlying implementation in Python.
+            When inheriting from Python classes, this allows calling into the original
+            Python implementation via base.MethodName(...).
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.PythonExceptionContainer.StackTrace">
+            <inheritdoc />
+        </member>
+        <member name="T:LostTech.Gradient.PythonFullNameAttribute">
+            <summary>
+            Specifies full name of the wrapped Python class
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonFullNameAttribute.#ctor(System.String)">
+            <summary>
+            Creates new instance of <see cref="T:LostTech.Gradient.PythonFullNameAttribute"/>
+            </summary>
+            <param name="fullName">Fully qualified Python class name</param>
+        </member>
+        <member name="P:LostTech.Gradient.PythonFullNameAttribute.FullName">
+            <summary>
+            Gets the full name of the Python class
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.PythonFunctionContainer">
+            <summary>
+            Container for Python functions and Python representations of .NET delegates
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonFunctionContainer.Invoke(System.Object[])">
+            <summary>
+            Invokes this function with specified arguments
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonFunctionContainer.GetPythonFunction``1(System.String)">
+            <summary>
+            Gets function by name from module <typeparamref name="TModule"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonFunctionContainer.Of(System.Delegate)">
+            <summary>
+            Wraps a <see cref="T:System.Delegate"/> into <see cref="T:LostTech.Gradient.PythonFunctionContainer"/>, allowing
+            it to be passed to Python as a Python function object
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonFunctionContainer.Of``1(System.Func{``0})">
+            <summary>
+            Wraps a <see cref="T:System.Func`1"/> into <see cref="T:LostTech.Gradient.PythonFunctionContainer"/>, allowing
+            it to be passed to Python as a Python function object
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonFunctionContainer.Of``2(System.Func{``0,``1})">
+            <summary>
+            Wraps a <see cref="T:System.Func`2"/> into <see cref="T:LostTech.Gradient.PythonFunctionContainer"/>, allowing
+            it to be passed to Python as a Python function object
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonFunctionContainer.Of``3(System.Func{``0,``1,``2})">
+            <summary>
+            Wraps a <see cref="T:System.Func`3"/> into <see cref="T:LostTech.Gradient.PythonFunctionContainer"/>, allowing
+            it to be passed to Python as a Python function object
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonFunctionContainer.Of``4(System.Func{``0,``1,``2,``3})">
+            <summary>
+            Wraps a <see cref="T:System.Func`4"/> into <see cref="T:LostTech.Gradient.PythonFunctionContainer"/>, allowing
+            it to be passed to Python as a Python function object
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.PythonModuleContainer">
+            <summary>
+            Container for Python modules
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonModuleContainer.Get``1">
+            <summary>
+            Gets the <see cref="T:LostTech.Gradient.PythonModuleContainer"/>, that wraps Python module exposed by type <typeparamref name="T"/>
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.PythonObjectContainer">
+            <summary>
+            Base type for all TensorFlow and NumPy classes. For internal use only. Can be removed in the future.
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.PythonObjectContainer.PythonObject">
+            <summary>
+            This object always points to the underlying implementation in Python.
+            When inheriting from Python classes, this allows calling into the original
+            Python implementation via base.MethodName(...).
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.#ctor(Python.Runtime.PyObject)">
+            <summary>
+            Create new instance of <see cref="T:LostTech.Gradient.PythonObjectContainer"/> for the specified Python object
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.__repr__">
+            <summary>
+            Same as Python <see href="https://docs.python.org/3.8/library/functions.html#repr">repr()</see>.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.__str__">
+            <summary>
+            Same as Python <see href="https://docs.python.org/3.8/library/stdtypes.html#str">str()</see>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.TrySetMember(System.Dynamic.SetMemberBinder,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.TryInvokeMember(System.Dynamic.InvokeMemberBinder,System.Object[],System.Object@)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.TryInvoke(System.Dynamic.InvokeBinder,System.Object[],System.Object@)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.TryConvert(System.Dynamic.ConvertBinder,System.Object@)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.TryBinaryOperation(System.Dynamic.BinaryOperationBinder,System.Object,System.Object@)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.TryUnaryOperation(System.Dynamic.UnaryOperationBinder,System.Object@)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.TryGetIndex(System.Dynamic.GetIndexBinder,System.Object[],System.Object@)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.TrySetIndex(System.Dynamic.SetIndexBinder,System.Object[],System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:LostTech.Gradient.PythonObjectContainer.GetDynamicMemberNames">
+            <inheritdoc />
+        </member>
+        <member name="T:LostTech.Gradient.RangeOrIndex">
+            <summary>Represents either <see cref="P:LostTech.Gradient.RangeOrIndex.Range"/> or <see cref="P:LostTech.Gradient.RangeOrIndex.Index"/></summary>
+        </member>
+        <member name="P:LostTech.Gradient.RangeOrIndex.Range">
+            <summary>
+            Gets <see cref="P:LostTech.Gradient.RangeOrIndex.Range"/> contained within this value, or raises <see cref="T:System.InvalidOperationException"/>
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.RangeOrIndex.Index">
+            <summary>
+            Gets <see cref="P:LostTech.Gradient.RangeOrIndex.Index"/> contained within this value, or raises <see cref="T:System.InvalidOperationException"/>
+            </summary>
+        </member>
+        <member name="P:LostTech.Gradient.RangeOrIndex.Value">
+            <summary>
+            Gets a boxed version of the contained value, e.g. <see cref="P:LostTech.Gradient.RangeOrIndex.Range"/> or <see cref="P:LostTech.Gradient.RangeOrIndex.Index"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.RangeOrIndex.#ctor(System.Range)">
+            <summary>
+            Creates <see cref="T:LostTech.Gradient.RangeOrIndex"/>, that contains specified <see cref="P:LostTech.Gradient.RangeOrIndex.Range"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.RangeOrIndex.#ctor(System.Index)">
+            <summary>
+            Creates <see cref="T:LostTech.Gradient.RangeOrIndex"/>, that contains specified <see cref="P:LostTech.Gradient.RangeOrIndex.Index"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.RangeOrIndex.op_Implicit(System.Int32)~LostTech.Gradient.RangeOrIndex">
+            <summary>
+            Creates <see cref="T:LostTech.Gradient.RangeOrIndex"/>, that contains specified <paramref name="index"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.RangeOrIndex.op_Implicit(System.Index)~LostTech.Gradient.RangeOrIndex">
+            <summary>
+            Creates <see cref="T:LostTech.Gradient.RangeOrIndex"/>, that contains specified <see cref="P:LostTech.Gradient.RangeOrIndex.Index"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.RangeOrIndex.op_Implicit(System.Range)~LostTech.Gradient.RangeOrIndex">
+            <summary>
+            Creates <see cref="T:LostTech.Gradient.RangeOrIndex"/>, that contains specified <see cref="P:LostTech.Gradient.RangeOrIndex.Range"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.Tools.OnlyOneOrDefault``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Gets the only element from the sequence, or a default value if the sequence contains &lt;&gt; 1 elements.
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.Tools.OnlyOneOrDefault``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">
+            <summary>
+            Gets the only element from the sequence matching the specified predicate,
+            or a default value if the sequence contains &lt;&gt; 1 elements.
+            </summary>
+        </member>
+        <member name="T:LostTech.Gradient.TupleTools">
+            <summary>
+            Extensions for <see cref="T:System.ValueTuple"/>
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.TupleTools.Items(System.ValueTuple)">
+            <summary>
+            Enumerates tuple items
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.TupleTools.Items``1(System.ValueTuple{``0})">
+            <summary>
+            Enumerates tuple items
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.TupleTools.Items``1(System.ValueTuple{``0,``0})">
+            <summary>
+            Enumerates tuple items
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.TupleTools.Items``1(System.ValueTuple{``0,``0,``0})">
+            <summary>
+            Enumerates tuple items
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.TupleTools.Items``1(System.ValueTuple{``0,``0,``0,``0})">
+            <summary>
+            Enumerates tuple items
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.TupleTools.Items``1(System.ValueTuple{``0,``0,``0,``0,``0})">
+            <summary>
+            Enumerates tuple items
+            </summary>
+        </member>
+        <member name="M:LostTech.Gradient.TupleTools.Items``1(System.ValueTuple{``0,``0,``0,``0,``0,``0})">
+            <summary>
+            Enumerates tuple items
+            </summary>
+        </member>
+    </members>
+</doc>
