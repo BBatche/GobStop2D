@@ -1,0 +1,65 @@
+{
+    "PlayerAgentBehavior": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1732673964.897744,
+                "auxillary_file_paths": [
+                    "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.pt"
+                ]
+            },
+            {
+                "steps": 0,
+                "file_path": "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1732674110.0502813,
+                "auxillary_file_paths": [
+                    "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.pt"
+                ]
+            },
+            {
+                "steps": 0,
+                "file_path": "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1732674341.1651318,
+                "auxillary_file_paths": [
+                    "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.pt"
+                ]
+            },
+            {
+                "steps": 0,
+                "file_path": "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1732674614.2754145,
+                "auxillary_file_paths": [
+                    "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.pt"
+                ]
+            },
+            {
+                "steps": 0,
+                "file_path": "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.onnx",
+                "reward": null,
+                "creation_time": 1732674868.9276361,
+                "auxillary_file_paths": [
+                    "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results\\my_run\\PlayerAgentBehavior.onnx",
+            "reward": null,
+            "creation_time": 1732674868.9276361,
+            "auxillary_file_paths": [
+                "results\\my_run\\PlayerAgentBehavior\\PlayerAgentBehavior-0.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}
