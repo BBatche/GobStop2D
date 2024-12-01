@@ -1,0 +1,38 @@
+{
+    "PlayerAgentBehavior": {
+        "checkpoints": [
+            {
+                "steps": 499995,
+                "file_path": "results\\ProperRewards\\PlayerAgentBehavior\\PlayerAgentBehavior-499995.onnx",
+                "reward": 0.0,
+                "creation_time": 1733012565.2928998,
+                "auxillary_file_paths": [
+                    "results\\ProperRewards\\PlayerAgentBehavior\\PlayerAgentBehavior-499995.pt"
+                ]
+            },
+            {
+                "steps": 500059,
+                "file_path": "results\\ProperRewards\\PlayerAgentBehavior\\PlayerAgentBehavior-500059.onnx",
+                "reward": 0.0,
+                "creation_time": 1733012565.3305185,
+                "auxillary_file_paths": [
+                    "results\\ProperRewards\\PlayerAgentBehavior\\PlayerAgentBehavior-500059.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500059,
+            "file_path": "results\\ProperRewards\\PlayerAgentBehavior.onnx",
+            "reward": 0.0,
+            "creation_time": 1733012565.3305185,
+            "auxillary_file_paths": [
+                "results\\ProperRewards\\PlayerAgentBehavior\\PlayerAgentBehavior-500059.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}
