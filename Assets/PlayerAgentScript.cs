@@ -41,33 +41,33 @@ public class PlayerAgentScript : Agent
         gameState.ResetState();
     }
 
-    public override void CollectObservations(VectorSensor sensor)
-    {
-        Debug.Log("collecting observations...");
-        //Add player position and velocity as observations
-        sensor.AddObservation(transform.position);
-        sensor.AddObservation(rb.velocity);
+    /*public override void CollectObservations(VectorSensor sensor)
+    //{
+    //    Debug.Log("collecting observations...");
+    //    Add player position and velocity as observations
+    //    sensor.AddObservation(transform.position);
+    //    sensor.AddObservation(rb.velocity);
 
-        //include game state observations(like onice, wingshit, etc.)
-        sensor.AddObservation(gameState.onIce ? 1.0f : 0.0f);
-        sensor.AddObservation(gameState.wingsHit ? 1.0f : 0.0f);
-        sensor.AddObservation(gameState.glueHit ? 1.0f : 0.0f);
+    //    include game state observations(like onice, wingshit, etc.)
+    //    sensor.AddObservation(gameState.onIce ? 1.0f : 0.0f);
+    //    sensor.AddObservation(gameState.wingsHit ? 1.0f : 0.0f);
+    //    sensor.AddObservation(gameState.glueHit ? 1.0f : 0.0f);
 
-        GameObject[] coins = GameObject.FindGameObjectsWithTag("Coin");
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+    //    GameObject[] coins = GameObject.FindGameObjectsWithTag("Coin");
+    //    GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
-        foreach (var coin in coins)
-        {
-            sensor.AddObservation(coin.transform.position);
-        }
+    //    foreach (var coin in coins)
+    //    {
+    //        sensor.AddObservation(coin.transform.position);
+    //    }
 
-        foreach (var enemy in enemies)
-        {
-            sensor.AddObservation(enemy.transform.position);
-        }
+    //    foreach (var enemy in enemies)
+    //    {
+    //        sensor.AddObservation(enemy.transform.position);
+    //    }
 
-        Debug.Log("total observations: " + sensor);
-    }
+    //    Debug.Log("total observations: " + sensor);
+    }*/
 
     public override void OnActionReceived(ActionBuffers actions)
     {
@@ -83,7 +83,6 @@ public class PlayerAgentScript : Agent
                 break;
             case 1: // Move right
                 rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-                AddReward(1.0f);
                 break;
         }
 
@@ -100,7 +99,6 @@ public class PlayerAgentScript : Agent
             if (Vector2.Distance(transform.position, coin.transform.position) < .1f)
             {
                 Debug.Log("Coin collected!");
-                AddReward(100.0f);
             }
         }
     }
@@ -204,9 +202,9 @@ public class PlayerAgentScript : Agent
         Debug.Log("Player died, triggering death animation...");
        
         EndEpisode();
-        AddReward(-1000.0f);
+        
         Debug.Log(GetCumulativeReward());
-        animator.SetTrigger("death");
+       
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -240,6 +238,14 @@ public class PlayerAgentScript : Agent
             Debug.Log("Final checkpoint reached, playing sound.");
             AddReward(5.0f); // Large reward for completing the level
             EndEpisode();
+        }
+        if (collision.gameObject.CompareTag("Checkpoint"))
+        {
+            if(gameState.coinsCollected ==gameState.checkpointNum)
+            {
+
+                AddReward(1.0f);
+            }
         }
     }
 }

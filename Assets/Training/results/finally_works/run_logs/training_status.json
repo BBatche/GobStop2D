@@ -2,22 +2,22 @@
     "PlayerAgentBehavior": {
         "checkpoints": [
             {
-                "steps": 108219,
-                "file_path": "results\\finally_works\\PlayerAgentBehavior\\PlayerAgentBehavior-108219.onnx",
-                "reward": 220.5,
-                "creation_time": 1732834090.711053,
+                "steps": 12594,
+                "file_path": "results\\finally_works\\PlayerAgentBehavior\\PlayerAgentBehavior-12594.onnx",
+                "reward": null,
+                "creation_time": 1733009028.8968077,
                 "auxillary_file_paths": [
-                    "results\\finally_works\\PlayerAgentBehavior\\PlayerAgentBehavior-108219.pt"
+                    "results\\finally_works\\PlayerAgentBehavior\\PlayerAgentBehavior-12594.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 108219,
+            "steps": 12594,
             "file_path": "results\\finally_works\\PlayerAgentBehavior.onnx",
-            "reward": 220.5,
-            "creation_time": 1732834090.711053,
+            "reward": null,
+            "creation_time": 1733009028.8968077,
             "auxillary_file_paths": [
-                "results\\finally_works\\PlayerAgentBehavior\\PlayerAgentBehavior-108219.pt"
+                "results\\finally_works\\PlayerAgentBehavior\\PlayerAgentBehavior-12594.pt"
             ]
         }
     },

@@ -12,6 +12,7 @@ TagManager:
   - GobSpawner
   - Coin
   - FinalCheckpoint
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
