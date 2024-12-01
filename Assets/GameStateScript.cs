@@ -25,4 +25,16 @@ public class GameState : ScriptableObject
 
     public string[] gobNames = { "neopolitan", "blueberry", " red velvet", "strawberry", "orange", "pumpkin", "carrot", "banana ", "chocolate", "carolina reaper" };
 
+    public void ResetState()
+    {
+        coinsCollected = 0;
+        checkpointNum = 0;
+        checkpointTouched = false;
+        displayCheckpoint = false;
+        onIce = false;
+        wingsHit = false;
+        glueHit = false;
+        cowDrinkHit = false;
+        finalCheckpointHit = false;
+    }
 }

@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1733009793",
+        "python_version": "3.10.10 (tags/v3.10.10:aad5f6a, Feb  7 2023, 17:20:36) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\bcb24\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\mlagents-learn PlayerAgentBehavior.yaml --run-id=plzwork2 --env=../../../../Training/Gob Stop Game.exe --quality-level=0 --width=512 --height=512 --no-graphics",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.5.1+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1733009795"
+    },
+    "total": 2.4811204000143334,
+    "count": 1,
+    "self": 0.003470800002105534,
+    "children": {
+        "run_training.setup": {
+            "total": 0.07717289996799082,
+            "count": 1,
+            "self": 0.07717289996799082
+        },
+        "TrainerController.start_learning": {
+            "total": 2.400476700044237,
+            "count": 1,
+            "self": 0.00011870008893311024,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 2.4003471999894828,
+                    "count": 1,
+                    "self": 2.4003471999894828
+                },
+                "TrainerController._save_models": {
+                    "total": 1.079996582120657e-05,
+                    "count": 1,
+                    "self": 1.079996582120657e-05
+                }
+            }
+        }
+    }
+}
